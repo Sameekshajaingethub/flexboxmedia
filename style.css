@@ -1,0 +1,73 @@
+*
+{	margin: 0px;
+	padding:0px;
+	font-family: sans-serif;
+}
+
+.section{
+width: 100%;
+background: url("C:/flexboxmedia/images/back.jpg") center;
+	background-size: cover;
+	padding-bottom: 49px;
+}
+.section h1{
+	text-align: center;
+    padding: 25px 0px;
+}
+.contanir{
+   width: 1170px;
+   margin: auto;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  display: flex;
+   border: 1px solid orange;
+}
+.section-items{
+	flex-basis: 23%;
+	margin: 5% 0px;
+	text-align: center;
+	padding: 5px 0px;
+	background: white;
+	box-shadow: 0px 0px 5px 3px lightyellow;
+
+}
+.section-items h2{
+	padding-top: 10px 0px;
+}
+.section-items p{
+	font-size: 14px;
+	padding: 10px;
+}
+.section-items button{
+	background: blue;
+	padding: 10px 25px;
+	border: none;
+	color: white;
+	border-radius: 10px;
+}
+.section-items:hover{
+	background: lightseagreen;
+}
+.section-items:hover h2{
+	color: black;
+}
+.section-items:hover p{
+	color: black;
+}
+.section-items:hover button{
+	background: white;
+	color: black;
+
+}
+
+
+@media only screen and(min-width: 200px) and (max-width: 750px){
+	.contanir{
+		width: 100%;
+		flex-direction: column;
+	}
+	.section-items{
+		margin: 10px;
+	}
+
+}
